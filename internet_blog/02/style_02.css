@@ -1,3 +1,4 @@
+/* Korzeń dokumentu */
 :root {
 	--font-family-headers: "Roboto", sans-serif;
 	--font-family-body: "Lato", sans-serif;
@@ -7,11 +8,13 @@
 	--menu-kolor-font: #ccc;
 	--menu-kolor-aktiv-font: #FF0000;
 }
-*{
+* {
 	box-sizing: border-box;
 	margin:0;
 	padding:0;
 }
+
+/* Style do bloków */
 html, body {
 	font-family: var(--font-family-body);
 	font-size: var(--font-size-body);
@@ -23,19 +26,26 @@ p {
 	padding: 0 1rem 0 1rem;
 	text-align: justify;
 }
-.wrapper {
-	width: 100%;
-	height: 100%;
+header {
+	padding: 4vh 0 4vh 0;
+	text-indent: 8vw;
 }
-nav{
+header h1 {
+	padding: 0;
+	text-indent: 0;
+	font-size: clamp(3rem, 16vw, 20rem);
+	font-weight: 900;
+}
+nav {
 	position: sticky;
 	top: 0;
 	width: 100%;
-	height: 20vh;
+	height: 10vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 2rem 0 2rem;
+	background: var(--kolor-tla-strony);
 }
 nav a {
 	width: 20%;
@@ -64,7 +74,40 @@ nav ul li a:hover {
 	font-weight: 400;
 	transition-delay: 40ms;
 }
+dl {
+	font-family: var(--font-family-body);
+	font-size: 2rem;
+}
+dt {
+	text-transform: uppercase;
+	color: #ddd;
+	font-weight: 900;
+}
+dd {
+	font-family: var(--font-family-body);
+	color: #3c323c;
+
+}
+footer {
+	
+}
+
+/* Style do klas */
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+.banner {
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .test {
 	font-size:2rem;
 	color: #000;
+}
+.nawigacja {
+	margin-top: 4vh;
 }
